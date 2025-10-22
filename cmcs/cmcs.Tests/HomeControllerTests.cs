@@ -125,6 +125,7 @@ namespace cmcs.Tests
             var controller = new HomeController(_mockLogger.Object, _context, _mockEnvironment.Object);
 
             // Act
+            //Act 2
             var result = await controller.RejectClaim(claim.ClaimId);
 
             // Assert

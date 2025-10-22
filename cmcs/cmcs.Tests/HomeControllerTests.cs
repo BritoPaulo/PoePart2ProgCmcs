@@ -110,7 +110,7 @@ namespace cmcs.Tests
         public async Task RejectClaim_ValidId_UpdatesStatus()
         {
             // Arrange
-            //Arrange 2
+          
             var claim = new Claim
             {
                 ClaimMonth = new DateTime(2025, 1, 1),

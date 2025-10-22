@@ -116,7 +116,7 @@ namespace cmcs.Tests
                 ClaimMonth = new DateTime(2025, 1, 1),
                 TotalHours = 40m,
                 RatePerHour = 300m,
-                Status = "Submitted"
+                Status = "Submitted Succesfully"
             };
             _context.Claims.Add(claim);
             await _context.SaveChangesAsync();

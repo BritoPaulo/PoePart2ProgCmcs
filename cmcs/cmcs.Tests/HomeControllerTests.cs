@@ -31,7 +31,7 @@ namespace cmcs.Tests
 
         [Fact]
         public void Index_ReturnsViewResult()
-            //public void Index_ReturnsViewResult()
+            
         {
             // Arrange
             var controller = new HomeController(_mockLogger.Object, _context, _mockEnvironment.Object);
@@ -43,10 +43,7 @@ namespace cmcs.Tests
             Assert.IsType<ViewResult>(result);
 
 
-            //Install - Package Microsoft.EntityFrameworkCore.InMemory - Version 9.0.0
-//Install - Package Microsoft.NET.Test.Sdk - Version 17.11.0
-//Install - Package xunit - Version 2.8.1
-//Install - Package xunit.runner.visualstudio - Version 2.8.1
+            
         }
 
         [Fact]
@@ -56,6 +53,7 @@ namespace cmcs.Tests
             var controller = new HomeController(_mockLogger.Object, _context, _mockEnvironment.Object);
 
             // Act
+            // Act 2
             var result = controller.SubmitClaim();
 
             // Assert

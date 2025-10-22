@@ -31,6 +31,7 @@ namespace cmcs.Tests
 
         [Fact]
         public void Index_ReturnsViewResult()
+            //public void Index_ReturnsViewResult()
         {
             // Arrange
             var controller = new HomeController(_mockLogger.Object, _context, _mockEnvironment.Object);

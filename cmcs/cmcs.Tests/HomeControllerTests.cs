@@ -53,7 +53,7 @@ namespace cmcs.Tests
             var controller = new HomeController(_mockLogger.Object, _context, _mockEnvironment.Object);
 
             // Act
-            // Act 2
+            
             var result = controller.SubmitClaim();
 
             // Assert
@@ -122,9 +122,9 @@ namespace cmcs.Tests
             await _context.SaveChangesAsync();
 
             var controller = new HomeController(_mockLogger.Object, _context, _mockEnvironment.Object);
-            //var controller = new HomeController(_mockLogger.Object, _context, _mockEnvironment.Object);
+            
             // Act
-            //Act 2
+            
             var result = await controller.RejectClaim(claim.ClaimId);
 
             // Assert
